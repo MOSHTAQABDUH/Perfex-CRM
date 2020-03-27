@@ -1,0 +1,13 @@
+
+
+ <VirtualHost *:80>
+     ServerAdmin admin@localhost.com
+     DocumentRoot "C:\xampp\htdocs\crm"
+     ServerName  crm.localhost
+     ServerAlias crm.localhost
+     <Directory "C:\xampp\htdocs\crm">
+         Options Indexes FollowSymLinks Includes ExecCGI
+         Order allow,deny
+         Allow from all
+     </Directory>
+ </VirtualHost>
